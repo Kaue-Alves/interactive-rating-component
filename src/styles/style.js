@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #141519;
+    background-color: #121417;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerCentro = styled.div`
-    background-color: #202731;
+    background-color: #252D37;
     width: 80%;
     max-width: 350px;
     height: auto;
@@ -36,7 +36,7 @@ export const ContainerCentro = styled.div`
 export const Estrela = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #242C34;
+  background-color: #2f3946;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@ export const StyledRadio = styled.input.attrs({ type: 'radio' })`
   width: 100%;
   height: 100%;
   appearance: none;
-  background-color: #343A40;
+  background-color: #2f3946;
   border-radius: 50%; 
   position: absolute;
 
