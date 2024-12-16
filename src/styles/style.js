@@ -78,6 +78,11 @@ export const RadioLabel = styled.label`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover input {
+    background-color: #FB7413; /* Cor desejada quando passar o mouse sobre o label */
+    cursor: pointer;
+  }
 `;
 
 export const StyledRadio = styled.input.attrs({ type: 'radio' })`
@@ -89,11 +94,15 @@ export const StyledRadio = styled.input.attrs({ type: 'radio' })`
   position: absolute;
 
   &:hover {
-    cursor: pointer;
+    background-color: #FB7413;
   }
   
   &:checked {
-    background-color: #FB7413;
+    background-color: #FFFFFF;
+  }
+
+  &:checked + span {
+    color: #000000;
   }
 `;
 
@@ -102,6 +111,7 @@ export const StyleRating = styled.span`
   font-family: 'Overpass', sans-serif;
   color: white;
   z-index: 1;
+
 `;
 
 export const StyledButton = styled.button`
@@ -119,6 +129,7 @@ export const StyledButton = styled.button`
   border-radius: 50px;
 
   &:hover {
+    background-color: #FFFFFF;
     cursor: pointer;
   }
 `
