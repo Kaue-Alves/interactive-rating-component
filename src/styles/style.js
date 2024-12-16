@@ -42,6 +42,11 @@ export const Estrela = styled.div`
   justify-content: center;
   align-items: center;
 `
+
+export const StyledIcon = styled.img`
+
+`
+
 export const Title = styled.h1`
   font-size: 1.5rem;
   font-weight: 700;
@@ -111,7 +116,6 @@ export const StyleRating = styled.span`
   font-family: 'Overpass', sans-serif;
   color: white;
   z-index: 1;
-
 `;
 
 export const StyledButton = styled.button`
