@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'overpass';
+    
   }
 `;
 
@@ -17,9 +18,10 @@ export const Container = styled.div`
     height: 100%;
     background-color: #121417;
     color: #fff;
-    display: flex;
+    display: ${({ alterar }) => alterar ? "none" : "flex"};
     justify-content: center;
     align-items: center;
+    
 `;
 
 export const ContainerCentro = styled.div`
@@ -32,19 +34,22 @@ export const ContainerCentro = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 `;
 
 export const Mensagem = styled.span`
-    font-family: "overpass"
-    color: orange;
-    background-color: gray;
-    padding: 10px;
+    font-family: "overpass";
+    color:  #FB7413;
+    background-color: #2f3946;
+    border-radius: 20px;
+    padding: 4px 20px;
 `
 
 export const Title = styled.h1`
     font-size: 1.5rem;
     font-weight: 700;
     font-family: "overpass";
+    margin: 0;
 `;
 
 export const Paragrafo = styled.p`
@@ -54,4 +59,6 @@ export const Paragrafo = styled.p`
     font-weight: 400;
     font-family: "overpass";
     text-align: center;
+    margin: 0;
+
 `;

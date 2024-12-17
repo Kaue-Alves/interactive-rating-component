@@ -17,9 +17,10 @@ export const Container = styled.div`
     height: 100%;
     background-color: #121417;
     color: #fff;
-    display: flex;
+    display: ${({ alterar }) => alterar ? "flex" : "none"};
     justify-content: center;
     align-items: center;
+    
 `;
 
 export const ContainerCentro = styled.div`
